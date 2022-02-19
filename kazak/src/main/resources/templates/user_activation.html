@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+::after {
+	box-sizing: border-box
+}
+
+::before {
+	box-sizing: border-box
+}
+</style>
+<style type="text/css">
+</style>
+</head>
+<body style="box-sizing: border-box;" data-gr-c-s-loaded="true">
+	<div class="mail_container"
+		style="box-sizing: border-box; width: 600px; margin: auto; font-family: &amp; #39; Proxima Nova Thin&amp;#39; , sans-serif; border: solid 1px #dddddd;">
+		<div class="padding-15 mail_content"
+			style="box-sizing: border-box; padding: 15px; background-color: #ffffffb3; font-size: 12px; color: #727171;">
+			<p style="box-sizing: border-box;">
+				Hi <b style="box-sizing: border-box;" th:text="${name}"> </b>,
+			</p>
+			<div class="di w_100"
+				style="box-sizing: border-box; display: inline-block; width: 100%;">
+				<p style="box-sizing: border-box;">Good Day!</p>
+				<p style="box-sizing: border-box;">Your email address is successfully registered with OFT - Kazak.</p>
+				<p style="box-sizing: border-box;">Email: <b style="box-sizing: border-box;" th:text="${email}"> </b></p>
+				<p style="box-sizing: border-box;">Please activate the account using the link below.</p>
+				<div class="reset_container"
+					style="box-sizing: border-box; padding: 25px 0px; display: inline-block; width: 100%; text-align: left;">
+					<a class="reset_password" th:href="@{${activationUrl}}"
+						style="box-sizing: border-box; padding: 7px 20px; background-color: #EE6F25; color: #ffffff; outline: none; border: none; border-radius: 4px; text-decoration: none; letter-spacing: 1px; box-shadow: 2px 4px 4px 1px grey;">ACTIVATE</a>
+				</div>
+				<p style="box-sizing: border-box; font-size: 11px; color: #EE6F25;">
+					Regards,<br>
+					ArcelorMittal Team
+				</p>
+				<div></div>
+			</div>
+		</div>
+		<div class="footer_mail di w_100"
+			style="padding: 13px; font-size: 13px; /* border-bottom:1px solid #ddd; */ border-top: 1px solid #ddd; display: inline-block; width: calc(100% - 26px);">
+			<span
+				style="box-sizing: border-box; text-align: left; float: left; position: relative; font-size: 11px; color: #EE6F25; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Powered
+				by ArcelorMittal</span>
+		</div>
+	</div>
+</body>
+</html>
